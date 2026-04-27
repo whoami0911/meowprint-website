@@ -23,6 +23,14 @@ import {
   Sun,
   Cloud,
   Feather,
+  User,
+  Utensils,
+  Calendar,
+  BarChart3,
+  Shirt,
+  Gem,
+  Cookie,
+  Trophy,
 } from "lucide-react";
 
 // Animation variants
@@ -208,6 +216,7 @@ export default function Home() {
     { name: "产品特色", href: "#features" },
     { name: "猫生预览", href: "#preview" },
     { name: "产品路线", href: "#roadmap" },
+    { name: "铲屎官中心", href: "/owner-center" },
     { name: "关于我们", href: "#about" },
   ];
 
@@ -238,10 +247,13 @@ export default function Home() {
               ))}
             </div>
             
-            <button className="hidden md:flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-[#ff8c42] to-[#ffb5c5] text-white rounded-full text-sm font-medium shadow-lg hover:shadow-xl transition-all hover:scale-105">
+            <a
+              href="/adopt"
+              className="hidden md:flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-[#ff8c42] to-[#ffb5c5] text-white rounded-full text-sm font-medium shadow-lg hover:shadow-xl transition-all hover:scale-105"
+            >
               <Sparkles className="w-4 h-4" />
               立即领养
-            </button>
+            </a>
             
             <button
               className="md:hidden p-2"
@@ -273,9 +285,12 @@ export default function Home() {
                     {item.name}
                   </a>
                 ))}
-                <button className="w-full py-3 bg-gradient-to-r from-[#ff8c42] to-[#ffb5c5] text-white rounded-full font-medium">
+                <a
+                  href="/adopt"
+                  className="block w-full py-3 bg-gradient-to-r from-[#ff8c42] to-[#ffb5c5] text-white rounded-full font-medium text-center"
+                >
                   立即领养
-                </button>
+                </a>
               </div>
             </motion.div>
           )}
@@ -339,14 +354,13 @@ export default function Home() {
               </motion.p>
               
               <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <button className="flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-[#ff8c42] to-[#ffb5c5] text-white rounded-full text-lg font-semibold shadow-lg hover:shadow-xl transition-all hover:scale-105">
+                <a
+                  href="/adopt"
+                  className="flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-[#ff8c42] to-[#ffb5c5] text-white rounded-full text-lg font-semibold shadow-lg hover:shadow-xl transition-all hover:scale-105"
+                >
                   <Cat className="w-5 h-5" />
                   开始领养
-                </button>
-                <button className="flex items-center justify-center gap-2 px-8 py-4 bg-white text-gray-700 rounded-full text-lg font-semibold border-2 border-orange-200 hover:border-orange-300 hover:bg-orange-50 transition-all">
-                  <PlayIcon />
-                  观看演示
-                </button>
+                </a>
               </motion.div>
               
               <motion.div variants={fadeInUp} className="mt-8 flex items-center gap-6 justify-center lg:justify-start text-sm text-gray-500">
@@ -865,10 +879,13 @@ export default function Home() {
                 领养你的专属AI猫咪，加入喵星球社区，与 thousands of 喵星人一起探索这个奇妙的平行世界
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button className="flex items-center justify-center gap-2 px-8 py-4 bg-white text-[#ff8c42] rounded-full text-lg font-semibold shadow-lg hover:shadow-xl transition-all hover:scale-105">
+                <a
+                  href="/adopt"
+                  className="flex items-center justify-center gap-2 px-8 py-4 bg-white text-[#ff8c42] rounded-full text-lg font-semibold shadow-lg hover:shadow-xl transition-all hover:scale-105"
+                >
                   <Cat className="w-5 h-5" />
                   免费领养猫咪
-                </button>
+                </a>
                 <button className="flex items-center justify-center gap-2 px-8 py-4 bg-white/20 text-white rounded-full text-lg font-semibold border-2 border-white/50 hover:bg-white/30 transition-all">
                   <MessageCircle className="w-5 h-5" />
                   加入社群
@@ -937,14 +954,5 @@ export default function Home() {
         </div>
       </footer>
     </div>
-  );
-}
-
-// Play icon component
-function PlayIcon() {
-  return (
-    <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
-      <path d="M8 5v14l11-7z" />
-    </svg>
   );
 }
