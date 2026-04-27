@@ -3,7 +3,7 @@
 3:I[84098,["/meowprint-website/_next/static/chunks/0dbhjjzl8qfwv.js","/meowprint-website/_next/static/chunks/0j~hg~4z96~cb.js","/meowprint-website/_next/static/chunks/14b~tljjp-29o.js"],"default"]
 6:I[97367,["/meowprint-website/_next/static/chunks/0dbhjjzl8qfwv.js"],"OutletBoundary"]
 7:"$Sreact.suspense"
-0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"Component":"$3","serverProvidedParams":{"searchParams":{},"params":{},"promises":["$@4","$@5"]}}],[["$","script","script-0",{"src":"/meowprint-website/_next/static/chunks/0j~hg~4z96~cb.js","async":true}],["$","script","script-1",{"src":"/meowprint-website/_next/static/chunks/14b~tljjp-29o.js","async":true}]],["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"w0w9hxXiVZU51LaOiUCn1"}
+0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"Component":"$3","serverProvidedParams":{"searchParams":{},"params":{},"promises":["$@4","$@5"]}}],[["$","script","script-0",{"src":"/meowprint-website/_next/static/chunks/0j~hg~4z96~cb.js","async":true}],["$","script","script-1",{"src":"/meowprint-website/_next/static/chunks/14b~tljjp-29o.js","async":true}]],["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"eBG1-fDLO9MhPHaIhz_sq"}
 4:{}
 5:"$0:rsc:props:children:0:props:serverProvidedParams:params"
 8:null
